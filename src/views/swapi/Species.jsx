@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Error from '../../components/Error'
 import Loader from '../../components/Loader'
 
@@ -8,19 +8,19 @@ import useRequestData from '../../hooks/useRequestData'
 
 const Species = () => {
   const { data, isLoading, error, makeRequest } = useRequestData()
-
-  const [page, setPage] = useState(1)
+  const [personID, setPersonID] = useState(2)
 
   useEffect(() => {
-    makeRequest("https://swapi.dev/api/species" )
+    makeRequest("https://swapi.dev/api/people/" + personID )
 
-  }, [page])
+  }, [personID])
 
   return (
     <div>
-      
+      <h1>Species</h1>
 
-      <h1>post from jsonplaceholder API</h1>
+      <input type='number' onInput={(e)=>{ setPersonID(e.target.value)}} placeholder='skriv person id'/>
+     
 
       {isLoading&&<Loader/>}
 
@@ -28,13 +28,13 @@ const Species = () => {
 
       {
         //slice gør at man kan vælge hvilken data der skal være
-        data && data.results.map( (p, index) => 
+        data && 
 
-          <article key={index}>
-            <h2>{p.name}</h2>
+          <article>
+            <h2>{data.name}</h2>
   
           </article>
-      )
+      
 
       }
     </div>
