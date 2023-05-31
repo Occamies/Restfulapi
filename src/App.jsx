@@ -18,6 +18,13 @@ import Species from './views/swapi/Species';
 /* news */
 import News1 from './views/newsApi/News1';
 import News2 from './views/newsApi/News2';
+/* RapidApi */
+import Facts from './views/rapidAPI/Facts';
+import Hobby from './views/rapidAPI/Hobby';
+import LovaCalc from './views/rapidAPI/LovaCalc';
+import FreeToPlay from './views/rapidAPI/FreeToPlay';
+/* openDataDk */
+import CykelStativ from './views/openDataDK/CykelStativ';
 
 //routing
 
@@ -42,6 +49,13 @@ function App() {
         {/* news */}
         <Route path='/News1' element={<News1/>}/>
         <Route path='/News2' element={<News2/>}/>
+        {/* rapidAPI */}
+        <Route path='/Facts' element={<Facts/>}/>
+        <Route path='/Hobby' element={<Hobby/>}/>
+        <Route path='/LovaCalc' element={<LovaCalc/>}/>
+        <Route path='/FreeToPlay' element={<FreeToPlay/>}/>
+        {/* openDataDK */}
+        <Route path='/CykelStativ' element={<CykelStativ/>}/>
         
 
 
