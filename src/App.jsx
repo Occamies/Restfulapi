@@ -25,6 +25,12 @@ import LovaCalc from './views/rapidAPI/LovaCalc';
 import FreeToPlay from './views/rapidAPI/FreeToPlay';
 /* openDataDk */
 import CykelStativ from './views/openDataDK/CykelStativ';
+import CykelStativMap from './views/openDataDK/CykelStativMap';
+/* openWeather */
+import CurrentWeather from './views/openWeather/CurrentWeather';
+import CurrentWeatherDawa from './views/openWeather/CurrentWeatherDawa';
+import CurrentWeatherDawaMap from './views/openWeather/CurrentWeatherDawaMap';
+import Pollution from './views/openWeather/Pollution';
 
 //routing
 
@@ -56,6 +62,12 @@ function App() {
         <Route path='/FreeToPlay' element={<FreeToPlay/>}/>
         {/* openDataDK */}
         <Route path='/CykelStativ' element={<CykelStativ/>}/>
+        <Route path='/CykelStativMap' element={<CykelStativMap/>}/>
+        {/* openweather */}
+        <Route path='/CurrentWeather' element={<CurrentWeather/>}/>
+        <Route path='/CurrentWeatherDawa' element={<CurrentWeatherDawa/>}/>
+        <Route path='/CurrentWeatherDawaMap' element={<CurrentWeatherDawaMap/>}/>
+        <Route path='/Pollution' element={<Pollution/>}/>
         
 
 
