@@ -55,3 +55,19 @@
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+
+.exerciseCon {
+  li {
+    list-style: none;
+  }
+
+  
+  .text-container {
+    overflow: hidden; /* Hide any overflow */
+    text-overflow: ellipsis; /* Display an ellipsis (...) for truncated text */
+    display: -webkit-box; /* Set the display as a flexible box */
+  -webkit-line-clamp: 3; /* Limit the number of displayed lines to 3 */
+  -webkit-box-orient: vertical; /* Set the box orientation to vertical */
+}
+}

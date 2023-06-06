@@ -31,6 +31,7 @@ import CurrentWeather from './views/openWeather/CurrentWeather';
 import CurrentWeatherDawa from './views/openWeather/CurrentWeatherDawa';
 import CurrentWeatherDawaMap from './views/openWeather/CurrentWeatherDawaMap';
 import Pollution from './views/openWeather/Pollution';
+import ExercisesApiNinja from './views/rapidAPI/ExercisesApiNinja';
 
 //routing
 
@@ -68,6 +69,7 @@ function App() {
         <Route path='/CurrentWeatherDawa' element={<CurrentWeatherDawa/>}/>
         <Route path='/CurrentWeatherDawaMap' element={<CurrentWeatherDawaMap/>}/>
         <Route path='/Pollution' element={<Pollution/>}/>
+        <Route path='/ExercisesApiNinja' element={<ExercisesApiNinja/>}/>
         
 
 

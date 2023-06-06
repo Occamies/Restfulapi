@@ -34,6 +34,7 @@ const NavBar = () => {
             <li><NavLink to="/Hobby">Hobby</NavLink></li>
             <li><NavLink to="/LovaCalc">LovaCalc</NavLink></li>
             <li><NavLink to="/FreeToPlay">FreeToPlay</NavLink></li>
+            <li><NavLink to="/ExercisesApiNinja">ExercisesApiNinja</NavLink></li>
           </ul>
         </li>
 

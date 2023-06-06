@@ -15,8 +15,6 @@ const News1 = () => {
   useEffect(() => {
     makeRequest("https://newsapi.org/v2/top-headlines?country=us&q="+news+"&apikey="+process.env.REACT_APP_NEWSAPIKEY)
 
-    console.log(news)
-
   }, [news])
   
  

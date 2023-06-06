@@ -17,7 +17,7 @@ const Hobby = () => {
   const handleNewHobby = ()=>{
   makeRequest("https://hobbies-by-api-ninjas.p.rapidapi.com/v1/hobbies",
     {
-      "X-RapidAPI-Key":process.env.React_APP_RAPIDAPIKEY,
+      "X-RapidAPI-Key":"54d9b55007msh02b07909ec7dcbep182911jsn698187f97374",
       "X-RapidAPI-Host":'hobbies-by-api-ninjas.p.rapidapi.com'
     }
     )
